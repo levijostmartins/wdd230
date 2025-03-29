@@ -1,0 +1,161 @@
+/* Base Styles (Mobile First) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #D8C5A7;
+    color: #212121;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1D2D3E;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+/* Hamburger Menu (Visible on Mobile) */
+.menuLinks {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(29, 45, 62, 0.95);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    z-index: 1000;
+}
+
+.menuLinks.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.menuLinks a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.hamburger {
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1100;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.cta-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 13px;
+    border-radius: 50px;
+    text-align: center;
+    width: 70%;
+    height: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #D73D2A;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 0px;
+    padding-bottom: 20px;
+}
+
+.cta-button:hover {
+    background-color: #A52A1A;
+}
+
+/* Info Sections */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.events,
+.weather {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Business Spotlight */
+#member-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.member-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #1D2D3E;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}

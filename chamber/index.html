@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Imbituba Chamber of Commerce: Connect with local businesses, discover events, and stay updated with the weather. Join us today!">
+    <meta name="author" content="Levi Jost Martins">
+    <title>Imbituba Chamber of Commerce - Home</title>
+    <link rel="icon" type="image/x-icon" href="images/beach.webp">
+    <meta property="og:title" content="Imbituba Chamber of Commerce - Home">
+    <meta property="og:description" content="Connect with local businesses, discover events, and stay updated with the weather.">
+    <meta property="og:image" content="">   <!-- add -->
+    <meta property="og:url" content=""> <!-- add -->
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+</head>
+<script src="menu.js"></script>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/beach.webp" alt="Imbituba Chamber of Commerce Logo">
+            <h1>Imbituba Chamber of Commerce</h1>
+        </div>
+        <button class="hamburger">☰</button>
+        <nav>
+            <ul class="menuLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Business Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+
+<!-- Main Content Section -->
+<main>
+    <!-- Hero Section -->
+<section class="hero">
+    <img src="images/hero-image.webp" alt="Beautiful view of Imbituba" class="hero-image">
+    
+    <div class="cta-overlay">
+        <h2>Grow Your Business with Us!</h2>
+        <p>Join the Imbituba Chamber of Commerce and connect with a thriving network of local businesses, exclusive events, and growth opportunities.</p>
+        <a href="join.html" class="cta-button">Join Now</a>
+    </div>
+</section>
+    <section class="info-section">
+        <div class="events">
+            <h3>Upcoming Events</h3>
+            <p>Stay tuned for upcoming networking events and business workshops.</p>
+        </div>
+        
+        <div class="weather">
+                            <!-- Fix API and write JS code for it -->
+            <h3>Current Weather</h3>
+            <div class="weather-card">
+                <h4 id="weather-location">Loading...</h4>
+                <p id="weather-temp"></p>
+                <p id="weather-description"></p>
+                <img id="weather-icon" src="" alt="Weather icon">
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Spotlight Section -->
+    <section id="business-spotlight" class="business-spotlight">
+        <h2>Business Spotlights</h2>
+                        <!-- Fill it with JSON -->
+        <div id="member-container"></div>
+    </section>
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-content">
+        <p>Imbituba Chamber of Commerce</p>
+        <p>Email: info@spproject.org | Phone: (+55) 0800-2300</p>
+    </div>
+    <div class="footer-dev-info">
+        <p><span id="currentyear"></span> &copy; Levi Jost Martins 🐈‍⬛ Brazil</p>
+        <p id="lastModified"></p>
+    </div>
+</footer>
+
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="../scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
+</body>
+</html>
