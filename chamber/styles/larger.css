@@ -140,3 +140,9 @@
     top: 20px; 
     height: fit-content;
 }
+
+@media (max-width: 600px) {
+    .discover-layout {
+        grid-template-columns: 1fr;
+    }
+}
