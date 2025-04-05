@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- SEO and Social Sharing Metadata -->
+        <meta property="og:title" content="Imbituba Chamber of Commerce - Home">
+        <meta property="og:description" content="Connect with local businesses, discover events, and stay updated with the weather.">
+        <meta property="og:image" content="https://levijostmartins.github.io/wdd230/chamber/images/beach.webp">
+        <meta property="og:url" content="https://levijostmartins.github.io/wdd230/chamber/index.html">
+        <meta property="og:type" content="website">
+        <meta name="author" content="Levi Jost Martins">
+    
+        <title>Imbituba Chamber of Commerce - Discovery</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="icon" href="images/beach.webp">
+
+    </head>
+    
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="images/beach.webp" alt="Imbituba Chamber of Commerce Logo">
+            <h1>Imbituba Chamber of Commerce</h1>
+        </div>
+        <button class="hamburger">☰</button>
+        <nav>
+            <ul class="menuLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Business Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Notification Popup (Initially hidden) -->
+    <div id="popupMessage" class="popup-message">Back so soon! Awesome!</div>
+
+    <!-- Main Content Section -->
+    <main class="discover-layout">
+        <aside class="sidebar">
+            <section>
+                <h2>Events & Information</h2>
+                <p>Event information to be added here</p>
+            </section>
+            <section class="calendar">
+                <h2>Calendar</h2>
+                <div id='calendar'></div>
+            </section>            
+        </aside>
+        <section class="gallery">
+            <h2>Photo Gallery</h2>
+            <img src="images/promotion.webp" alt="Promotion" loading="lazy">
+            <img src="images/mahout.webp" alt="Thai Ice Cream" loading="lazy">
+            <img src="images/drone-shot1.webp" alt="Drone Shot" loading="lazy">
+            <img src="images/Minas-Food.webp" alt="Minas food" loading="lazy">
+            <img src="images/drone-shot2.webp" alt="Drone Show" loading="lazy">
+            <img src="images/Rosa-Beach.webp" alt="Rosa Beach" loading="lazy">
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>Imbituba Chamber of Commerce</p>
+            <p>Email: info@spproject.org | Phone: (+55) 0800-2300</p>
+        </div>
+        <div class="footer-dev-info">
+            <p><span id="currentyear"></span> &copy; Levi Jost Martins 🐈‍⬛ Brazil</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="../scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/visit-date.js"></script> 
+    <script src="scripts/lazyload.js"></script> 
+    <script src="scripts/popup.js"></script> 
+    <script src="scripts/"></script>
+</body>
+</html>
