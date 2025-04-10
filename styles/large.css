@@ -4,6 +4,40 @@
         flex-direction: row;
         justify-content: center;
     }
+    .hamburger {
+        display: none;
+    }
+
+    .menuLinks {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: auto;
+        opacity: 1;
+        transform: none;
+    }
+
+    .menuLinks a {
+        padding: 1rem 1.5rem;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: white;
+        white-space: nowrap;
+    }
+
+    .menuLinks a:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #1a4d6e; /* Optional: matches header color */
+    }
+
 
     main {
         grid-template-columns: 2fr 1fr; 
@@ -22,4 +56,5 @@
         grid-column: span 2; 
         text-align: center;
     }
+    
 }

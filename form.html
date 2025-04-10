@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WDD 230 - Web Frontend Development - Levi Jost Martins - course assignment portal" />
+    <meta name="author" content="Levi Jost Martins" />
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Levi Jost Martins - WDD 230 Course Portal" />
+    <meta property="og:description" content="Web Frontend Development projects and assignments by Levi Jost Martins." />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <!-- Fonts and Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+
+    <title>Levi Jost Martins - WDD 230 - Form</title>
+</head>
+<body>
+    <div id="mode" aria-label="Toggle dark mode" role="button" tabindex="0">🕶️</div>
+
+    <header>
+        <img src="images/levi-profile.png" alt="Levi Jost Martins with a camera" />
+        <span>Levi Jost Martins</span>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="menuLinks">&#9776;</button>
+    </header>
+
+    <nav>
+        <ul class="menuLinks" id="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Account Registration</h1>
+        <form method="get" action="record.html" id="registrationForm">
+            <label for="username">Username:
+                <input type="text" id="username" name="username" required>
+            </label>
+
+            <label for="password">Password:
+                <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}" title="Password must be at least 8 alphanumeric characters.">
+            </label>
+
+            <label for="confirm">Confirm Password:
+                <input type="password" id="confirm" name="confirm" required>
+            </label>
+
+            <label for="email">BYUI Email:
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" title="Please enter a valid @byui.edu email address">
+            </label>
+
+            <label for="rating">Page Rating:
+                <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5" oninput="rangeValue.textContent=value">
+                <span id="rangeValue">5</span>
+            </label>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Levi Jost Martins, SP, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/dark.js"></script>
+    <script src="scripts/submit.js"></script>
+</body>
+</html>

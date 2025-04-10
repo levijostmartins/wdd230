@@ -1,2 +1,6 @@
-document.getElementById('year').textContent = new Date().getFullYear();
-document.getElementById('lastModified').textContent = `Last Modification: ${document.lastModified}`;
+const visitsDisplay = document.querySelector("#visits");
+let numVisits = Number(localStorage.getItem("visits-ls")) || 0;
+visitsDisplay.textContent = numVisits;
+
+numVisits++;
+localStorage.setItem("visits-ls", numVisits);
