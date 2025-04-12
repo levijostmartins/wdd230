@@ -90,9 +90,7 @@
         padding: 30px;
         text-align: left;
     }
-}
-
-/* Main layout with grid */
+    /* Main layout with grid */
 .discover-layout {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -122,7 +120,7 @@
 
 /* Gallery styling */
 .gallery {
-    border: 1px solid #ccc; /* Border around the entire gallery */
+    border: 1px solid #ccc; 
     padding: 15px;
     display: grid;
     gap: 20px;
@@ -141,8 +139,12 @@
     height: fit-content;
 }
 
-@media (max-width: 600px) {
-    .discover-layout {
-        grid-template-columns: 1fr;
-    }
+    .discover-layout.flipped {
+        display: grid;
+        grid-template-columns: 1.2fr 1.8fr; 
+        gap: 30px; 
+        padding: 30px;
+        align-items: flex-start;
+      }
+
 }

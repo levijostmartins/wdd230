@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join the Imbituba Chamber of Commerce and grow your business with us.">
+  <meta name="author" content="Levi Jost Martins">
+  <title>Join Us - Imbituba Chamber of Commerce</title>
+  <link rel="icon" href="images/beach.webp" type="image/x-icon" />
+  <meta property="og:title" content="Join Us - Imbituba Chamber of Commerce">
+  <meta property="og:description" content="Become a member and enjoy exclusive benefits.">
+  <meta property="og:image" content="https://levijostmartins.github.io/wdd230/chamber/images/beach.webp">
+  <meta property="og:url" content="https://levijostmartins.github.io/wdd230/chamber/join.html">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/beach.webp" alt="Imbituba Chamber of Commerce Logo" />
+      <h1>Imbituba Chamber of Commerce</h1>
+    </div>
+    <button class="hamburger">☰</button>
+    <nav>
+      <ul class="menuLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discovery.html">Discover</a></li>
+        <li><a href="directory.html">Business Directory</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="discover-layout flipped">
+    <!-- Membership Benefits -->
+    <section class="sidebar">
+      <div class="tier gold">
+        <h3>Gold Membership</h3>
+        <p>✔ Featured business spotlight<br>
+           ✔ Premium ad placement<br>
+           ✔ Exclusive event invitations<br>
+           ✔ Priority support</p>
+      </div>
+      <div class="tier silver">
+        <h3>Silver Membership</h3>
+        <p>✔ Business spotlight<br>
+           ✔ Event access<br>
+           ✔ Monthly newsletter mention</p>
+      </div>
+      <div class="tier bronze">
+        <h3>Bronze Membership</h3>
+        <p>✔ Directory listing<br>
+           ✔ Access to training events</p>
+      </div>
+      <div class="tier np">
+        <h3>NP Membership (Free)</h3>
+        <p>✔ For nonprofits<br>
+           ✔ Basic listing in directory</p>
+      </div>
+    </section>
+  
+    <!-- Join Form -->
+    <section class="form-box">
+        <form method="get" action="thankyou.html" class="wf1">
+          <fieldset>
+            <legend>Join the Chamber</legend>
+      
+            <div class="form-group">
+              <label for="fname">First Name*</label>
+              <input type="text" name="fname" id="fname" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="lname">Last Name*</label>
+              <input type="text" name="lname" id="lname" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="title">Title / Position</label>
+              <input type="text" name="title" id="title" pattern="[A-Za-z\s\-]{7,}" placeholder="e.g., Marketing Manager">
+            </div>
+      
+            <div class="form-group">
+              <label for="email">Email*</label>
+              <input type="email" name="email" id="email" placeholder="you@example.com" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="phone">Mobile Phone*</label>
+              <input type="tel" name="phone" id="phone" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="orgname">Business / Organization Name*</label>
+              <input type="text" name="orgname" id="orgname" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="membership">Membership Level*</label>
+              <select name="membership" id="membership" required>
+                <option value="">--Select--</option>
+                <option value="np">NP Membership (Free)</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+              </select>
+            </div>
+      
+            <div class="form-group">
+              <label for="description">Business Description</label>
+              <textarea name="description" id="description" rows="4" placeholder="Tell us about your business..."></textarea>
+            </div>
+      
+            <input type="hidden" name="timestamp" id="timestamp">
+      
+            <div class="form-group">
+              <input type="submit" value="Submit Application">
+            </div>
+          </fieldset>
+        </form>
+      </section>      
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>Imbituba Chamber of Commerce</p>
+      <p>Email: info@spproject.org | Phone: (+55) 0800-2300</p>
+    </div>
+    <div class="footer-dev-info">
+      <p><span id="currentyear"></span> &copy; Levi Jost Martins 🐈‍⬛ Brazil</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+
+  <script src="../scripts/getDates.js"></script>
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/timestamp.js"></script>
+</body>
+</html>
