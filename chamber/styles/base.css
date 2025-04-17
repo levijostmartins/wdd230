@@ -53,6 +53,10 @@ h1 {
   opacity: 0;
   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
   z-index: 1000;
+
+  list-style: none;   /* ← remove bullets */
+  margin: 0;          /* ← reset default spacing */
+  padding: 0;         /* ← reset default spacing */
 }
 
 .menuLinks.active {
@@ -77,6 +81,7 @@ h1 {
   padding: 0.5rem;
   z-index: 1100;
 }
+
 
 /* Hero Section */
 .hero {
@@ -496,6 +501,43 @@ footer {
   margin-top: 8px !important;
   font-size: 1rem !important;
 }
+
+/* Spotlight styles for index.html only */
+#business-spotlight .spotlight-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  justify-items: center;
+}
+
+#business-spotlight .spotlight-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  width: 100%;
+  max-width: 300px;
+}
+
+#business-spotlight .spotlight-card:hover {
+  transform: scale(1.03);
+}
+
+#business-spotlight .spotlight-card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+#business-spotlight .spotlight-card h4 {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
 
 @media (min-width: 1024px) {
   .hamburger {

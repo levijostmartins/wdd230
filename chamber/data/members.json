@@ -41,7 +41,7 @@
       "address": "Rua da Aventura, 89",
       "phone": "+55 48 99999-3333",
       "website": "https://ecotours.com.br",
-      "image": "ecotours.webp",
+      "image": "ecotour.webp",
       "membershipLevel": "Bronze",
       "description": "Nature tours and whale watching excursions."
     },
@@ -50,7 +50,7 @@
       "address": "Rua das Dunas, 67",
       "phone": "+55 48 99999-4444",
       "website": "https://hotelbrisa.com",
-      "image": "hotel.webp",
+      "image": "brisa.webp",
       "membershipLevel": "Gold",
       "description": "Luxury accommodations near the beach."
     },
@@ -59,7 +59,7 @@
       "address": "Rua da Paz, 12",
       "phone": "+55 48 99999-5555",
       "website": "https://yogamar.com",
-      "image": "yogastudio.webp",
+      "image": "yoga.webp",
       "membershipLevel": "Silver",
       "description": "Daily yoga classes with ocean views."
     },
@@ -77,7 +77,7 @@
       "address": "Av. Oceano, 321",
       "phone": "+55 48 99999-7777",
       "website": "https://sabordomar.com.br",
-      "image": "restaurant.webp",
+      "image": "sabor-do-mar.webp",
       "membershipLevel": "Gold",
       "description": "Fresh seafood and traditional cuisine."
     }
