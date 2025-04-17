@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse members of the Imbituba Chamber of Commerce and connect with local businesses." />
+  <meta name="author" content="Levi Jost Martins" />
+  <title>Business Directory | Imbituba Chamber of Commerce</title>
+
+  <link rel="icon" type="image/x-icon" href="images/beach.webp" />
+  <meta property="og:title" content="Business Directory | Imbituba Chamber of Commerce" />
+  <meta property="og:description" content="Find and connect with businesses in Imbituba." />
+  <meta property="og:image" content="https://levijostmartins.github.io/wdd230/chamber/images/beach.webp" />
+  <meta property="og:url" content="https://levijostmartins.github.io/wdd230/chamber/directory.html" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/beach.webp" alt="Imbituba Chamber of Commerce Logo" />
+      <h1>Imbituba Chamber of Commerce</h1>
+    </div>
+    <button class="hamburger">☰</button>
+    <nav>
+      <ul class="menuLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discovery.html">Discover</a></li>
+        <li><a href="directory.html" class="active">Business Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="toggle-buttons">
+      <button id="grid-view" class="active">Grid View</button>
+      <button id="list-view">List View</button>
+    </div>
+    
+    <section id="members-container" class="grid-view">
+      <!-- Cards will be dynamically injected here -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>Imbituba Chamber of Commerce</p>
+      <p>Email: info@spproject.org | Phone: (+55) 0800-2300</p>
+    </div>
+    <div class="footer-dev-info">
+      <p><span id="currentyear"></span> &copy; Levi Jost Martins 🐈‍⬛ Brazil</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script src="../scripts/getDates.js"></script>
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/viewToggle.js"></script>
+</body>
+</html>

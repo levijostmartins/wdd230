@@ -1,61 +1,85 @@
 {
-    "companies": [
-      {
-        "name": "laflorestaflat",
-        "address": "La Floresta Flat - Praia do Rosa, Estr. Grp | 396 (Ibiraquera | Praia Rosa | Ouvidor), 1060-1070, Garopaba - SC, 88495-000",
-        "phone": "048991796859",
-        "website": "https://laflorestaflat.com.br",
-        "image": "",
-        "membershipLevel": ""
-      },
-      {
-        "name": "MAHOUT- Sorvete tailandês/ Praia do Rosa",
-        "address": "Av. Porto Novo - Praia do Rosa, Imbituba - SC, 88780-000",
-        "phone": "",
-        "website": "",
-        "image": "",
-        "membershipLevel": ""
-      },
-      {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "image": "",
-        "membershipLevel": ""
-      },
-      {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "image": "",
-        "membershipLevel": ""
-      },
-      {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "image": "",
-        "membershipLevel": ""
-      },
-      {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "image": "",
-        "membershipLevel": ""
-      },
-      {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "image": "",
-        "membershipLevel": ""
-      }
-    ]
-  }
-  
+  "companies": [
+    {
+      "name": "La Floresta Flat",
+      "address": "La Floresta Flat - Praia do Rosa, Estr. Grp | 396 (Ibiraquera | Praia Rosa | Ouvidor), 1060-1070, Garopaba - SC, 88495-000",
+      "phone": "+55 48 99179-6859",
+      "website": "https://laflorestaflat.com.br",
+      "image": "promotion.webp",
+      "membershipLevel": "Silver",
+      "description": "Charming flat near Praia do Rosa with full amenities."
+    },
+    {
+      "name": "MAHOUT - Sorvete Tailandês",
+      "address": "Av. Porto Novo - Praia do Rosa, Imbituba - SC, 88780-000",
+      "phone": "+55 48 99999-8888",
+      "website": "https://mahoutsorvete.com.br",
+      "image": "mahout.webp",
+      "membershipLevel": "Bronze",
+      "description": "Thai-style rolled ice cream at Praia do Rosa."
+    },
+    {
+      "name": "Imbituba Surf Co.",
+      "address": "Rua das Ondas, 123",
+      "phone": "+55 48 99999-1111",
+      "website": "https://imbitubasurf.com",
+      "image": "surfco.webp",
+      "membershipLevel": "Gold",
+      "description": "Surf gear and lessons for all levels."
+    },
+    {
+      "name": "Praia Café",
+      "address": "Av. Beira Mar, 456",
+      "phone": "+55 48 99999-2222",
+      "website": "https://praiacafe.com",
+      "image": "cafe.webp",
+      "membershipLevel": "Silver",
+      "description": "Relaxing beachside café with artisan coffee."
+    },
+    {
+      "name": "EcoTours Imbituba",
+      "address": "Rua da Aventura, 89",
+      "phone": "+55 48 99999-3333",
+      "website": "https://ecotours.com.br",
+      "image": "ecotours.webp",
+      "membershipLevel": "Bronze",
+      "description": "Nature tours and whale watching excursions."
+    },
+    {
+      "name": "Hotel Brisa",
+      "address": "Rua das Dunas, 67",
+      "phone": "+55 48 99999-4444",
+      "website": "https://hotelbrisa.com",
+      "image": "hotel.webp",
+      "membershipLevel": "Gold",
+      "description": "Luxury accommodations near the beach."
+    },
+    {
+      "name": "Studio Yoga Mar",
+      "address": "Rua da Paz, 12",
+      "phone": "+55 48 99999-5555",
+      "website": "https://yogamar.com",
+      "image": "yogastudio.webp",
+      "membershipLevel": "Silver",
+      "description": "Daily yoga classes with ocean views."
+    },
+    {
+      "name": "Imbituba Tech",
+      "address": "Rua da Inovação, 101",
+      "phone": "+55 48 99999-6666",
+      "website": "https://imbitubatech.com",
+      "image": "tech.webp",
+      "membershipLevel": "Bronze",
+      "description": "IT solutions for growing businesses."
+    },
+    {
+      "name": "Restaurante Sabor do Mar",
+      "address": "Av. Oceano, 321",
+      "phone": "+55 48 99999-7777",
+      "website": "https://sabordomar.com.br",
+      "image": "restaurant.webp",
+      "membershipLevel": "Gold",
+      "description": "Fresh seafood and traditional cuisine."
+    }
+  ]
+}
